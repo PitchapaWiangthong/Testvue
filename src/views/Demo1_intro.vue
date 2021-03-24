@@ -13,7 +13,7 @@ export default {
 name : "demo1",
 data() {
     return {
-        Header : "Demo1",
+        Header : "Demo",
         message: ""
     }
 },
