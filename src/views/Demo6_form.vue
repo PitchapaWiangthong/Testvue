@@ -5,7 +5,8 @@
             <!-- Firstname -->
           <div style="margin-top: 16px;">
               <label for="first_name">Firstname</label>
-              <input style="margin-left: 10px;" type="text" name="first_name" v-model="applicant.first_name">
+              <!-- v-model.trim จะไม่เก็บพวกspacebar -->
+              <input style="margin-left: 10px;" type="text" name="first_name" v-model.trim="applicant.first_name">
           </div>
             <!-- Lastname -->
           <div style="margin-top: 16px;">
@@ -49,7 +50,8 @@ data() {
             first_name: "",
             last_name: "",
             sex: "female",
-            course: "react"
+            course: "react",
+
         }
     }
 },
